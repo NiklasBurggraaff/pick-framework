@@ -1,0 +1,40 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Question from "../../../components/Question.astro";
+import Details from "../../../components/Details.astro";
+---
+
+<Layout title="SSR">
+    <Details>
+        <p>
+            Frameworks that include SSR are very valuable for many different
+            reasons.
+        </p>
+        <p>
+            SEO is a big reason as it enables your content to be indexed better
+            and ranked higher in searches. It can also make it come up
+            automatically when you post a link on twitter. Metadata in the HTML
+            is super important!
+        </p>
+        <p>
+            There is also the need for having some content on the page before
+            the JS loads for users who are in places where there internet isn't
+            as good.
+        </p>
+        <p>There are a lot of really good solutions for this!</p>
+    </Details>
+    <Question
+        choices={[
+            {
+                label: "A lot",
+                href: "/app/questions/api",
+            },
+            {
+                label: "Just a bit",
+                href: "/app/questions/interactions",
+            },
+        ]}
+    >
+        <p>How much interactivity do you need with the SSR?</p>
+    </Question>
+</Layout>

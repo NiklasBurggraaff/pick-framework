@@ -1,0 +1,15 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Pick from "../../../components/Pick.astro";
+import { tools } from "../../../utils/tools";
+---
+
+<Layout title="Preact + Vite">
+    <Pick tools={[tools.preact, tools.vite]}>
+        <p>
+            Preact with Vite is a great option if you like React, but need
+            better performance. Really good option, super minimal, super
+            performant, wonderful choice!
+        </p>
+    </Pick>
+</Layout>

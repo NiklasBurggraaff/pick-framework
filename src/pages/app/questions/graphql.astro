@@ -1,0 +1,21 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Question from "../../../components/Question.astro";
+---
+
+<Layout title="GraphQL">
+    <Question
+        choices={[
+            {
+                label: "I BATHE in graphs",
+                href: "/app/fullstack/redwoodjs",
+            },
+            {
+                label: "Meh",
+                href: "/app/fullstack/nextjs",
+            },
+        ]}
+    >
+        <p>Will you ever need a mobile app?</p>
+    </Question>
+</Layout>

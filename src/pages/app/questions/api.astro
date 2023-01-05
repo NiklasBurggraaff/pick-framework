@@ -1,0 +1,21 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Question from "../../../components/Question.astro";
+---
+
+<Layout title="API">
+    <Question
+        choices={[
+            {
+                label: "No",
+                href: "/app/questions/bleeding-edge",
+            },
+            {
+                label: "Maybe",
+                href: "/app/questions/graphql",
+            },
+        ]}
+    >
+        <p>Will you ever need a mobile app?</p>
+    </Question>
+</Layout>

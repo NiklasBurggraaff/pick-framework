@@ -1,0 +1,48 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Question from "../../components/Question.astro";
+import Pick from "../../components/Pick.astro";
+import { tools } from "../../utils/tools";
+---
+
+<Layout title="React + Vite">
+    <Pick tools={[tools.react, tools.vite]}>
+        <p>The best starting point depends on your experience and goals.</p>
+        <p>
+            However, the default still to this day, for good reason, is still
+            React. I would highly recommend React with Vite as probably the
+            simplest possible solution for building an app. There are many
+            reasons for this, such as:
+        </p>
+        <ul>
+            <li>The universality of React</li>
+            <li>The support other tools have for React</li>
+            <li>The quality of the documentation and community</li>
+            <li>The quality of DX</li>
+        </ul>
+        <p>These all make React the easiest bet to make</p>
+    </Pick>
+    <hr />
+    <Question
+        choices={[
+            {
+                label: "But I need better performance",
+                href: "/app/performance",
+            },
+            {
+                label: "I need SSR",
+                href: "/app/questions/ssr",
+            },
+            {
+                label: "I need an API",
+                href: "/app/questions/api",
+            },
+            {
+                label: "My team isn't all native English speakers",
+                href: "/app/vue",
+            },
+        ]}
+    >
+        <p>Do you have specific problems or desires to use something else?</p>
+    </Question>
+</Layout>

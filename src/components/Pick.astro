@@ -1,0 +1,65 @@
+---
+import type { Tool } from "../utils/tools";
+import Details from "./Details.astro";
+
+export interface Props {
+    tools: Tool[];
+}
+
+const { tools } = Astro.props;
+---
+
+<h2>Pick</h2>
+<Details>
+    <div class="grid">
+        <div class="tools">
+            {
+                tools.map((tool) => (
+                    <a href={tool.url} class="tool" target="_blank">
+                        <img src={tool.icon} alt={tool.name + " icon"} />
+                        <p>{tool.name}</p>
+                    </a>
+                ))
+            }
+        </div>
+        <div class="slot">
+            <slot />
+        </div>
+    </div>
+</Details>
+
+<style>
+    .grid {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .tools {
+        flex: 0 0 auto;
+        max-width: 50%;
+        min-width: 8rem;
+        padding: 1em 0;
+    }
+
+    .tool {
+        display: inline-block;
+        text-align: center;
+        margin-right: 1rem;
+    }
+
+    .tool:last-child {
+        margin-right: 0;
+    }
+
+    .tool p {
+        margin: 0;
+    }
+
+    img {
+        width: 8rem;
+    }
+
+    .slot {
+        flex: 1 1 auto;
+    }
+</style>

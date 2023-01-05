@@ -1,0 +1,11 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Pick from "../../components/Pick.astro";
+import { tools } from "../../utils/tools";
+---
+
+<Layout title="Hugo">
+    <Pick tools={[tools.hugo]}>
+        <p>Hugo is surprisingly decent for if you really hate JS and HTML.</p>
+    </Pick>
+</Layout>

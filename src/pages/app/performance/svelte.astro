@@ -1,0 +1,18 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Pick from "../../../components/Pick.astro";
+import { tools } from "../../../utils/tools";
+---
+
+<Layout title="Svelte + SvelteKit">
+    <Pick tools={[tools.svelte, tools.sveltekit]}>
+        <p>
+            For people who hate React (which is more and more common every day)
+            I'd recommend Svelte with SvelteKit.
+        </p>
+        <p>
+            SvelteKit is recommended regardless of what you are building with
+            Svelte because it's the most supported way to Svelte right now.
+        </p>
+    </Pick>
+</Layout>

@@ -1,0 +1,39 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Question from "../../components/Question.astro";
+import Pick from "../../components/Pick.astro";
+import { tools } from "../../utils/tools";
+---
+
+<Layout title="Static HTML Site">
+    <Pick tools={[tools.html]}>
+        <p>
+            Using HTML is the minimal possible solution for a site, making it a
+            great place to start.
+        </p>
+    </Pick>
+    <hr />
+    <Question
+        choices={[
+            {
+                label: "But I REALLY like GoLang",
+                href: "/site/hugo",
+            },
+            {
+                label: "But I have THOUSANDS of pages",
+                href: "/site/eleventy",
+            },
+            {
+                label: "But I want X (e.g. Tailwind)",
+                href: "/site/astro",
+            },
+        ]}
+    >
+        <p>Are you running into problems because of the simplicity?</p>
+        <p>
+            When this is the case it makes sense to adopt a bigger, heavier,
+            more dedicated solution. The solution to pick depends on which
+            problems you are running into.
+        </p>
+    </Question>
+</Layout>

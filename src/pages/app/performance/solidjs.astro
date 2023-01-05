@@ -1,0 +1,34 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Pick from "../../../components/Pick.astro";
+import { tools } from "../../../utils/tools";
+import Question from "../../../components/Question.astro";
+---
+
+<Layout title="SolidJS + Vite">
+    <Pick tools={[tools.solidjs, tools.vite]}>
+        <p>
+            SolidJS with Vite is fenominal option if you like React a bit, not
+            your favourite thing as you could be convinced to try something
+            else.
+        </p>
+        <p>
+            SolidJS was the winner of the <a
+                href="https://twitter.com/bedesqui/status/1608983192308191233"
+            >
+                T3 Awards 2022 for Framework of the Year
+            </a>!
+        </p>
+    </Pick>
+    <hr />
+    <Question
+        choices={[
+            {
+                label: "I need SSR/a backend",
+                href: "/app/fullstack/solidstart",
+            },
+        ]}
+    >
+        <p>Do you need more?</p>
+    </Question>
+</Layout>

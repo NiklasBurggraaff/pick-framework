@@ -1,0 +1,16 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Pick from "../../components/Pick.astro";
+import { tools } from "../../utils/tools";
+---
+
+<Layout title="Astro">
+    <Pick tools={[tools.astro]}>
+        <p>
+            Astro feels like HTML for the most part, but isn't. Astro is very
+            minimal by default. It however provides great developer experience
+            to add additional things to do certain integrations.
+        </p>
+        <p>(Astro was used to create this site)</p>
+    </Pick>
+</Layout>

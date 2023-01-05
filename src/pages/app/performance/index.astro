@@ -1,0 +1,35 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Question from "../../../components/Question.astro";
+import Details from "../../../components/Details.astro";
+---
+
+<Layout title="Performance">
+    <Details>
+        <p>
+            So your performance is not where you want it to be with React, or
+            you know it's going to be an app that has a lot of interactivity. It
+            now makes a lot of sense to breakout into different solutions.
+        </p>
+    </Details>
+    <hr />
+    <Question
+        choices={[
+            {
+                label: "A lot!",
+                href: "/app/performance/preact",
+            },
+            {
+                label: "A bit!",
+                href: "/app/performance/solidjs",
+            },
+            {
+                label: "I hate it!",
+                href: "/app/performance/svelte",
+            },
+        ]}
+    >
+        <p>How much do you like React?</p>
+        <p>This will help decide what alternative will best suite you.</p>
+    </Question>
+</Layout>

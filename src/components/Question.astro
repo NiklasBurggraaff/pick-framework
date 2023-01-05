@@ -1,0 +1,46 @@
+---
+import Choice from "./Choice.astro";
+
+export interface Props {
+    choices: {
+        label: string;
+        href: string;
+    }[];
+}
+
+const { choices } = Astro.props;
+---
+
+<h2>Question</h2>
+<div class="question">
+    <slot />
+</div>
+
+<h3>Choose option below:</h3>
+<ul role="list" class="choices-grid">
+    {
+        choices.map((choice) => (
+            <Choice label={choice.label} href={choice.href} />
+        ))
+    }
+</ul>
+
+<style>
+    .question {
+        line-height: 1.6;
+        margin: 1rem 0;
+        border: 1px solid rgba(var(--accent), 25%);
+        background-color: white;
+        padding: 1rem;
+        border-radius: 0.4rem;
+    }
+    strong {
+        color: rgb(var(--accent));
+    }
+    .choices-grid {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        padding: 0;
+    }
+</style>

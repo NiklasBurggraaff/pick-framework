@@ -1,0 +1,25 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Question from "../../../components/Question.astro";
+---
+
+<Layout title="Bleeding Edge">
+    <Question
+        choices={[
+            {
+                label: "Very",
+                href: "/app/fullstack/solidstart",
+            },
+            {
+                label: "Some",
+                href: "/app/fullstack/nextjs",
+            },
+            {
+                label: "None",
+                href: "/app/fullstack/redwoodjs",
+            },
+        ]}
+    >
+        <p>How bleeding edge will you go?</p>
+    </Question>
+</Layout>

@@ -1,0 +1,26 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Question from "../../../components/Question.astro";
+import Details from "../../../components/Details.astro";
+---
+
+<Layout title="Interactions">
+    <Details>
+        <p>Test</p>
+    </Details>
+    <Question
+        choices={[
+            {
+                label: "A little",
+                href: "/app/fullstack/astro-react",
+            },
+            {
+                label: "A lot",
+                href: "/app/fullstack/remix",
+            },
+        ]}
+    >
+        <p>How much do the "interactive" bits interact?</p>
+        <p>Basically how connected are the different components/pages?</p>
+    </Question>
+</Layout>

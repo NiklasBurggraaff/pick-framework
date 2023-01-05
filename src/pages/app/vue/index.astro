@@ -1,0 +1,45 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Pick from "../../../components/Pick.astro";
+import { tools } from "../../../utils/tools";
+import Question from "../../../components/Question.astro";
+---
+
+<Layout title="Vue + Vite">
+    <Pick tools={[tools.vue, tools.vite]}>
+        <p>
+            Something often take for granted in the English speaking world is
+            the ability to understand English really well.
+        </p>
+        <p>
+            The new
+            <a href="https://beta.reactjs.org/" target="_blank">
+                Beta React Docs
+            </a>
+            are absolutely phenomenal (10/10), but the translation effort has not
+            started yet because they are not done. The current
+            <a
+                href="https://reactjs.org/docs/getting-started.html"
+                target="_blank"
+            >
+                React Docs
+            </a>
+            are translated well as of recently, but are really rough (4/10).
+        </p>
+        <p>
+            Vue absolutely killed it with the internationalisation and general
+            world community building. This is due to their work that in their
+            documentation (8/10) and framework overall. There is no more
+            compelling reason to take a look at and potentially even move over
+            to Vue than not wanting to be deep in the English speaking bubble
+            for React.
+        </p>
+    </Pick>
+    <Question
+        choices={[
+            { label: "I need SSR/a backend", href: "/app/fullstack/nuxtjs" },
+        ]}
+    >
+        <p>Do you need more?</p>
+    </Question>
+</Layout>
