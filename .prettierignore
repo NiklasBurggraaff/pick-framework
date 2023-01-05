@@ -1,0 +1,9 @@
+# Ignore markdown files
+*.md
+
+# Output files
+.vercel
+
+# PNPM
+pnpm-lock.yaml
+pnpm-workspace.yaml
