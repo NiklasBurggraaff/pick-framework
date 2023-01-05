@@ -17,13 +17,15 @@ const { choices } = Astro.props;
 </div>
 
 <h3>Choose option below:</h3>
-<ul role="list" class="choices-grid">
-    {
-        choices.map((choice) => (
-            <Choice label={choice.label} href={choice.href} />
-        ))
-    }
-</ul>
+<div class="choices-grid">
+    <ul role="list">
+        {
+            choices.map((choice) => (
+                <Choice label={choice.label} href={choice.href} />
+            ))
+        }
+    </ul>
+</div>
 
 <style>
     .question {
@@ -38,8 +40,13 @@ const { choices } = Astro.props;
         color: rgb(var(--accent));
     }
     .choices-grid {
+        overflow-x: auto;
+    }
+    .choices-grid ul {
+        min-width: fit-content;
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         gap: 1rem;
         padding: 0;
     }
