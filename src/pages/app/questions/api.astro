@@ -1,18 +1,27 @@
 ---
 import Layout from "../../../layouts/Layout.astro";
 import Question from "../../../components/Question.astro";
+import Details from "../../../components/Details.astro";
 ---
 
-<Layout title="API">
+<Layout title="Application with API">
+    <Details>
+        <p>
+            You will often need an API for your applications. There are many
+            different alternatives, so we will need to narrow down with a few
+            questions to pick the framework for you.
+        </p>
+    </Details>
+    <hr />
     <Question
         choices={[
             {
                 label: "Maybe",
-                href: "/app/questions/graphql",
+                href: "/app/questions/mobile-app",
             },
             {
                 label: "No",
-                href: "/app/questions/bleeding-edge",
+                href: "/app/questions/web-app",
             },
         ]}
     >

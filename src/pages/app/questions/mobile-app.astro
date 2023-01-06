@@ -1,9 +1,17 @@
 ---
 import Layout from "../../../layouts/Layout.astro";
 import Question from "../../../components/Question.astro";
+import Details from "../../../components/Details.astro";
 ---
 
 <Layout title="GraphQL">
+    <Details>
+        <p>
+            There are 2 great options if you ever need a mobile app for your
+            application. This question will help decide which one to use.
+        </p>
+    </Details>
+    <hr />
     <Question
         choices={[
             {
@@ -16,6 +24,6 @@ import Question from "../../../components/Question.astro";
             },
         ]}
     >
-        <p>Will you ever need a mobile app?</p>
+        <p>Are you obsessed with GraphQL?</p>
     </Question>
 </Layout>

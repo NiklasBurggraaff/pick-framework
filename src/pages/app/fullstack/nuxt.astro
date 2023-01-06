@@ -1,0 +1,19 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Pick from "../../../components/Pick.astro";
+import { tools } from "../../../utils/tools";
+---
+
+<Layout title="Nuxt">
+    <Pick tools={[tools.nuxt]} fullStackSplit="FE+BE">
+        <p>
+            Nuxt is the intuitive Vue Framework. If you need SSR/a backend for
+            Vue, this is the go to.
+        </p>
+        <p>
+            It's popularity grew considerably at the start of 2022 due to the
+            realse of Nuxt 3 which provided a significanlty improved developer
+            experience.
+        </p>
+    </Pick>
+</Layout>

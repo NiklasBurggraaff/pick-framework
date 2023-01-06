@@ -1,9 +1,17 @@
 ---
 import Layout from "../../../layouts/Layout.astro";
 import Question from "../../../components/Question.astro";
+import Details from "../../../components/Details.astro";
 ---
 
-<Layout title="Bleeding Edge">
+<Layout title="Web Application">
+    <Details>
+        <p>
+            There are many different choices here. This question will help you
+            pick the best framework for you.
+        </p>
+    </Details>
+    <hr />
     <Question
         choices={[
             {

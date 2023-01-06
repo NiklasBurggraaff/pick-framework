@@ -6,6 +6,20 @@ import { tools } from "../../../utils/tools";
 
 <Layout title="React with Astro">
     <Pick tools={[tools.react, tools.astro]} fullStackSplit="FE+BE">
-        <p>React with Astro</p>
+        <p>
+            React with Astro can provide a great app experience, when different
+            parts of the app are not very connected.
+        </p>
+        <p>
+            It is not impossible to create a very connected app by
+            <a
+                href="https://docs.astro.build/en/core-concepts/sharing-state/"
+                target="_blank"
+            >
+                sharing state
+            </a>
+            between components. There are, however, better alternatives for this
+            use case.
+        </p>
     </Pick>
 </Layout>
