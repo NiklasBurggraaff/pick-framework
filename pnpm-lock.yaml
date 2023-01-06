@@ -5,12 +5,10 @@ specifiers:
   astro: ^1.9.0
   prettier: ^2.8.1
   prettier-plugin-astro: ^0.7.2
-  web-vitals: ^3.1.0
 
 dependencies:
   '@astrojs/vercel': 2.4.0
   astro: 1.9.0
-  web-vitals: 3.1.0
 
 devDependencies:
   prettier: 2.8.1
@@ -3644,10 +3642,6 @@ packages:
   /web-streams-polyfill/3.2.1:
     resolution: {integrity: sha512-e0MO3wdXWKrLbL0DgGnUV7WHVuw9OUvL4hjgnPkIeEvESk74gAITi5G606JtZPp39cd8HA9VQzCIvA49LpPN5Q==}
     engines: {node: '>= 8'}
-    dev: false
-
-  /web-vitals/3.1.0:
-    resolution: {integrity: sha512-zCeQ+bOjWjJbXv5ZL0r8Py3XP2doCQMZXNKlBGfUjPAVZWokApdeF/kFlK1peuKlCt8sL9TFkKzyXE9/cmNJQA==}
     dev: false
 
   /webidl-conversions/3.0.1:
